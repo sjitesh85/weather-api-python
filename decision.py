@@ -12,7 +12,10 @@ forecast = requests.get(url="https://api.openweathermap.org/data/2.5/forecast?la
 #data = weather.json()
 
 temp = weather.json()["main"]["temp"]
-#fore_temp = forecast.
+rain = forecast.json()["list"]["pop"]
+
+print(rain)
+
 import random
 # Fixed pant options
 pant_options = ["Black Jeans", "Blue Jeans", "Brown Pant", "Olive pant", "Grey Jeans"]
