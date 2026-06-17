@@ -42,6 +42,6 @@ else:
 
 
 # Output 
-print("So, the current temperature is: ", temp)
-print(f"Today's dress code is : {outfit}")
+print("Hey Jitesh, the current outside temperature is: ", temp)
+print(f"And yours today's Outfit is : {outfit}")
 
