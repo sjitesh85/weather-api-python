@@ -7,10 +7,12 @@ import requests
 weather = requests.get(url="https://api.openweathermap.org/data/2.5/weather?lat=54.685500&lon=25.287539&units=metric&appid=cf5781a1d377581680898bcb7d5e0d5c")
 weather.raise_for_status()
 
+forecast = requests.get(url="https://api.openweathermap.org/data/2.5/forecast?lat=54.685500&lon=25.287539&appid=cf5781a1d377581680898bcb7d5e0d5c")
+
 #data = weather.json()
 
 temp = weather.json()["main"]["temp"]
-
+#fore_temp = forecast.
 import random
 # Fixed pant options
 pant_options = ["Black Jeans", "Blue Jeans", "Brown Pant", "Olive pant", "Grey Jeans"]
